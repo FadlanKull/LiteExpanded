@@ -35,17 +35,17 @@ console.log(chalk.bgRed('W E L C O M E'));
   
 console.log('')  
 
-console.log(chalk.bgGreen('ϟS T U M B L E H A C K Sϟ'));  
+console.log(chalk.bgGreen('S T U M B L E L I T E'));  
   
 console.log('')  
   
   console.log(`Trophy And Crown Hack Safe! [ReEdit]
-By : ${chalk.bold('Mr.Russel#0001')} - Credit to special person : @dkmpostor & @Eskey ft @xDast#8745 
+By : ${chalk.bold('Natasya#0001')} - Credit to special person : @dkmpostor & @Eskey ft @xDast#8745 
 `);
 	
-console.log(`Choose what to grind`);
-console.log(`1. Trophy only (Round 3 auth)`);
-console.log(`2. Crown + Trophy (Winner auth)`);
+console.log(chalk.bgRed(`Pilih yang kamu mau)`);
+console.log(chalk.bgCyan(`1. Trophy only (Round 3 auth)`);
+console.log(chalk.bgGreen(`2. Crown + Trophy (Winner auth)`);
 
 const round = rs.question(`Choose : `)
 console.log('');  
@@ -53,7 +53,7 @@ console.log('');
   
   
  
-  const auth = rs.question('Masukin code nya deck! : ');
+  const auth = rs.question('Input auth code! : ');
   console.log('');
 
   while (true) {
@@ -61,7 +61,7 @@ console.log('');
     const result = await GoStumble(auth);
     if (!result) {
 
-      console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Codenya salah deck :`));
+      console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Wrong Code :`));
       
 
     } else if (result.includes('User')) {
@@ -72,15 +72,15 @@ console.log('');
       const trophy = data.User.SkillRating;
       const crown = data.User.Crowns;
 
-console.log(chalk.bgRed('♠Status:Succes'));
+console.log(chalk.red('Status:Succes'));
 console.log('') 
-console.log(chalk.bgGreen(`♠Time : [ ${moment().format('HH:mm:ss')} ]`),)     
+console.log(chalk.green(`Time : [ ${moment().format('HH:mm:ss')} ]`),)     
 console.log('')     
-console.log(chalk.bgMagenta(`♠User : ${username}`))   
+console.log(chalk.magenta(`User : ${username}`))   
 console.log('')
-console.log(chalk.bgYellow(`♠Trophy : ${trophy}`))   
+console.log(chalk.yellow(`Trophy : ${trophy}`))   
 console.log('')
-console.log(chalk.bgCyan(`♠Crown : ${crown}`))   
+console.log(chalk.cyan(`Crown : ${crown}`))   
      
       
       await GoStumble(auth);
