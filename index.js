@@ -44,8 +44,7 @@ By : ${chalk.bold('Natasya#0001')} - Credit to special person : @dkmpostor & @Es
 `);
 	
 console.log(`${chalk.bgRed(`
-1. GRIND TROPHY
-2. GRIND CROWN
+1. GRIND CROWN
 SILAHKAN PILIH`)} 
 `);
 	
@@ -54,7 +53,7 @@ const round = rs.question(`[+] Select Number  : `);
   
   
  
-  const auth = rs.question('Input auth code! : ');
+  const auth = rs.question('Masukin Kode Deck ! : ');
   console.log('');
 
   while (true) {
@@ -88,9 +87,7 @@ console.log(chalk.cyan(`Crown : ${crown}`))
       await GoStumble(auth);
       await GoStumble(auth);
       await GoStumble(auth);
-      console.log('')
-      console.log('')
-      await sleep(11000);
+      await sleep(10000);
       
       
 
